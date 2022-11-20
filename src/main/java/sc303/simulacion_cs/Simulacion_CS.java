@@ -19,5 +19,7 @@ public class Simulacion_CS {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 	driver.get("https://rahulshettyacademy.com/locatorspractice/");
+        
+        //El que lo lee se la come
     }
 }
