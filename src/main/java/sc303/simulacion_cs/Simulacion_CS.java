@@ -5,13 +5,19 @@
 
 package sc303.simulacion_cs;
 
-/**
- *
- * @author usuario
- */
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 public class Simulacion_CS {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.setProperty("webdriver.chrome.driver", "C:/Users/usuario/Documents/NetBeansProjects");
+		
+        WebDriver driver = new ChromeDriver();
+        
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		
+	driver.get("https://rahulshettyacademy.com/locatorspractice/");
     }
 }
